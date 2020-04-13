@@ -24,9 +24,18 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/vali-admin/docs/css/main.css",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/vali-admin/docs/js/jquery-3.3.1.min.js",
+              "node_modules/vali-admin/docs/js/popper.min.js",
+              "node_modules/vali-admin/docs/js/bootstrap.min.js",
+              "node_modules/vali-admin/docs/js/main.js",
+              "node_modules/vali-admin/docs/js/plugins/pace.min.js",
+              "node_modules/sweetalert2/dist/sweetalert2.js"
+            ]
           },
           "configurations": {
             "production": {

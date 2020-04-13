@@ -1,0 +1,51 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{title}} </h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" id='modal-add'>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="JobType"> English Name</label>
+        <small class="text-danger">(*) Require</small>
+        <input
+          type="text"
+          [(ngModel)]="model.en"
+          placeholder='Enter English Name'
+          class="form-control disabled"
+        />
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="VietnameseName"> Vietnamese Name</label>
+        <small class="text-danger">(*) Require</small>
+        <input
+          id="Link"
+          type="text"
+          [(ngModel)]="model.vi"
+          placeholder='Enter Vietnamese Name'
+          class="form-control Link"
+        />
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="Path">Chinese Name</label>
+        <input
+          type="text"
+          [(ngModel)]="model.tw"
+          placeholder='Enter Chinese Name'
+          class="form-control"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer justify-content-between">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+
+  <button type="button" class="btn btn-outline-dark" (click)="create()">Save</button>
+</div>
